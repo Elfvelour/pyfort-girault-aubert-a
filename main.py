@@ -1,4 +1,7 @@
-from epreuves_logique import *
+from epreuves_logiques import *
+from epreuves_mathematiques import *
+
+
 
 partie = True
 while partie:
