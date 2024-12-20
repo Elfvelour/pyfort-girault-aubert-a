@@ -1,26 +1,26 @@
+from fonctions_utiles import *
 from random import *
 import json
-def charger_enigmes():
-    with open('enigmesPF.json','r', encoding='utf8') as f:
+def charger_enigmes(fichier:str):
+    with open(fichier,'r', encoding='utf8') as f:
         donnees = json.load(f)
         return donnees
-print(charger_enigmes())
+
+FICHIER = "./data/enigmesPF.json"
 
 def enigmes_pere_fouras():
+    donnees=charger_enigmes("./data/enigmesPF.json")
     enigme=[]
-    enigme=randint(charger_enigmes())
+    enigme=donnees[randint(0,len(donnees))]
+    print(enigme)
+    print("La question est :",'\n')
+    print(enigme['question'])
     nombre_essais=3
-    print(enigme[:])
     while nombre_essais>0:
         reponse_joueur = str(input("Saisir une réponse : "))
-        L = list(reponse_joueur)
-        reponse_joueur_min = ''
-        for i in range(len(L)):
-            if ord(L[i]) > 62:
-                L[i] = chr(ord(L[i]) + 32)
-        for i in range(len(L)):
-            reponse_joueur_min = reponse_joueur_min + L[i]
-        if reponse_joueur_min == enigme["reponse"]:
+        reponse_joueur_min=mot_miniscule(reponse_joueur)
+        reponse_enigme=mot_miniscule(enigme["reponse"])
+        if reponse_joueur_min == reponse_enigme:
             print("La clé est trouvé, bravo les ptits indiens")
             return True
         else:
@@ -29,3 +29,4 @@ def enigmes_pere_fouras():
     if nombre_essais<1:
         print("Vous avez échoué, la solution était",enigme["reponse"])
         return False
+print(enigmes_pere_fouras())
