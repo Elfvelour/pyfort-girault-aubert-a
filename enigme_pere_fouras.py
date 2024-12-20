@@ -28,26 +28,32 @@ liste_pere_fouras=["Ah, ce n'est pas la bonne réponse... le trésor reste hors 
 "L’esprit est fort, mais l'énigme était plus rusée, hihihi !",
 "Retournez donc voir Passe-Partout, il vous consolera mieux que moi !"]
 
+liste_felicitation_fouras=["Hihihi, voilà qui est étonnant... je pensais que vous alliez échouer !",
+"Une victoire éclatante, mais ne prenez pas trop confiance... mes énigmes se corsent !",
+"Vous êtes aussi rusé qu’un renard... ou ai-je simplement été trop généreux ?",
+"Hé bien, vous avez réussi ! Allez vite chercher votre clé avant que je change d’avis.",
+"C’est une victoire méritée, aventurier. Mais attention, le Fort n’a pas dit son dernier mot."]
+
 def enigmes_pere_fouras():
     donnees=charger_enigmes("./data/enigmesPF.json")
     enigme=[]
-    enigme=donnees[randint(0,len(donnees))]
-    print(enigme)
+    enigme=donnees[randint(0,len(donnees)-1)]
     print("La question est :",'\n')
-    print(enigme['question'])
+    print(enigme['question'],'\n')
     nombre_essais=3
     while nombre_essais>0:
         reponse_joueur = str(input("Saisir une réponse : "))
         reponse_joueur_min=mot_miniscule(reponse_joueur)
         reponse_enigme=mot_miniscule(enigme["reponse"])
         if reponse_joueur_min == reponse_enigme:
-            print("La clé est trouvé, bravo les ptits indiens")
+            print("La clé est trouvé, bravo ")
+            print(liste_felicitation_fouras[randint(0,len(liste_felicitation_fouras)-1)])
             return True
         else:
             nombre_essais=nombre_essais-1
             print(liste_pere_fouras[randint(0,len(liste_pere_fouras)-1)])
-            print("Ils vous restent : ",nombre_essais,"nombres d'essai(s)")
+            print("Ils vous restent : ",nombre_essais,"nombres d'essai(s)\n")
     if nombre_essais<1:
-        print("Vous avez échoué, la solution était",enigme["reponse"])
+        print("Vous avez échoué, bande de nullos,la solution était",enigme["reponse"])
         return False
-print(enigmes_pere_fouras())
+
