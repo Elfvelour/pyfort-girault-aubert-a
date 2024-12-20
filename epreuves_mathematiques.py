@@ -50,23 +50,23 @@ def epreuve_math_premier():
 
 #epreuve 3, la roulette
 def epreuve_roulette_mathematique():
-    Lnb=[]
+    liste_nb=[]
     somme=0
     for i in range(5):
-        Lnb.append(randint(1,20))
+        liste_nb.append(randint(1,20))
     operation=randint(1,3)
-    print(Lnb[:])
+    print(liste_nb[:])
     if operation==1:
         for i in range(5):
-            somme+=Lnb[i]
+            somme+=liste_nb[i]
         print("Calculez le résultat en combinant ces nombres avec une addition")
     elif operation==2:
         for i in range(5):
-            somme= somme-Lnb[i]
+            somme= somme-liste_nb[i]
         print("Calculez le résultat en combinant ces nombres avec une soustraction")
     else:
         for i in range(5):
-            somme = somme * Lnb[i]
+            somme = somme * liste_nb[i]
         print("Calculez le résultat en combinant ces nombres avec une mulitplication")
     reponse=int(input("Votre réponse : "))
     if reponse==somme:
