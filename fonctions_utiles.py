@@ -7,4 +7,3 @@ def mot_miniscule(mot):
     for i in range(len(L)):
         mot_min = mot_min + L[i]
     return mot_min
-print(mot_miniscule(mot='Abbbfjo'))

@@ -5,10 +5,7 @@ def bonneteau():
     variable=''
     cle=False
     liste=['A','B','C']
-    print("Bienvenue au jeux du bonneteau, "
-          "les règles sont simples. Vous avez "
-          "2 tentatives pour trouver la clé "
-          "parmi 3 chois: A, B ou C")
+    print("Bienvenue au jeux du bonneteau,\nles règles sont simples. Vous avez\n2 tentatives pour trouver la clé\nparmi 3 chois: A, B ou C")
     print("-------------------------------------")
     while tentative<3:
         variable=liste[randint(0,2)]
