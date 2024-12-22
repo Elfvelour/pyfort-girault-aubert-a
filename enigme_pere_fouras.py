@@ -45,27 +45,34 @@ def charger_enigmes(fichier:str):
 #chemin du fichier enigmePF.json pour la fonction au dessus
 FICHIER = "./data/enigmesPF.json"
 
-# Fonction qui utilise la fonction au-dessus pour afficher et faire deviner des enigmes
+# Fonction qui utilise la fonction au-dessus pour afficher et faire deviner des enigmes du Père Fouras
+# et renvoie vraie ou faux si le joueur a réussi à deviner ou pas l'énigme
 def enigmes_pere_fouras():
     donnees=charger_enigmes("./data/enigmesPF.json")
     enigme=[]
+    #choisi au hasard dans la liste donnee du fichier enigmesPF.json, une enigme du père Fouras
     enigme=donnees[randint(0,len(donnees)-1)]
     print("La question est :",'\n')
     print(enigme['question'],'\n')
     nombre_essais=3
+    # boucle while qui permet au joueur de donner sa réponse et de
+    # comparer s'il a bon ou pas avec la solution au maximum 3 fois
     while nombre_essais>0:
         reponse_joueur = str(input("Saisir une réponse : "))
+        #transforme la réponse et la solution en minuscule
         reponse_joueur_min=mot_miniscule(reponse_joueur)
         reponse_enigme=mot_miniscule(enigme["reponse"])
         if reponse_joueur_min == reponse_enigme:
             print("La clé est trouvé, bravo ")
+            #renvoie un message du père Fouras de la liste félicitation
             print(liste_felicitation_fouras[randint(0,len(liste_felicitation_fouras)-1)])
             return True
         else:
             nombre_essais=nombre_essais-1
+            #renvoie un message du père Fouras qui taquine les joueurs
             print(liste_pere_fouras[randint(0,len(liste_pere_fouras)-1)])
             print("PS: n'oubliez pas le 'le' ou 'la devant le mot'")
-            print("Ils vous restent : ",nombre_essais,"nombres d'essai(s)\n")
+            print("Ils vous restent : ",nombre_essais,"essai(s)\n")
     if nombre_essais<1:
-        print("Vous avez échoué, bande de nullos,la solution était",enigme["reponse"])
+        print("Vous avez échoué, bande de vilains,la solution était",enigme["reponse"])
         return False
