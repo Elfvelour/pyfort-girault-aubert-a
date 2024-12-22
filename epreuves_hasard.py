@@ -1,4 +1,16 @@
+##############################################
+###### Programme Python epreuve hasard  ######
+###### Auteur: Timothée Girault         ######
+###### Version: 1.0                     ######
+##############################################
+
+##############################################
+# Importations des fonctions externes
+
 from random import *
+
+##############################################
+# Déclaration de fonctions utilisateurs
 
 def bonneteau():
     tentative=1
@@ -52,9 +64,12 @@ def lance_de_des():
         print("Après trois essais, aucun des joueurs n'a gagné, c'est un match nul")
         return False
 
+##############################################
+# Corps du programme principal
+
+#récupère les 2 épreuves et en choisi un au hasard en lançant cette épreuve
 def epreuve_hasard()->bool:
     epreuve=[lance_de_des,bonneteau]
     aleatoire=randint(0,1)
     epreuve=epreuve[aleatoire]
     return epreuve()
-print(epreuve_hasard())

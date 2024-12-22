@@ -1,7 +1,19 @@
+##############################################
+####### Programme Python epreuve maths #######
+####### Auteur: Timothée Girault       #######
+####### Version: 1.2                   #######
+##############################################
+
+##############################################
+# Importation des fonctions externes
+
 from  math import sqrt
 from random import randint
 
-#epreuve 1 de maths, les factorielles
+##############################################
+# Déclarations des fonctions utilisateurs
+
+#  Epreuve 1 de maths, les factorielles
 def factorielle(n):
     res=1
     if n==0:
@@ -11,6 +23,7 @@ def factorielle(n):
             res=res*i
     return res
 
+# Epreuve 1.1 de maths; le calcul de factorielles
 def epreuve_factorielle():
     n=randint(1,10)
     res=factorielle(n)
@@ -21,7 +34,7 @@ def epreuve_factorielle():
     else:
         return False
 
-#epreuve 2, les nombres premiers
+# Epreuve 2, les nombres premiers
 def est_premier(n):
     premier = True
     for i in range(2, int(sqrt(n))+ 1):
@@ -29,6 +42,7 @@ def est_premier(n):
             premier = False
     return premier
 
+# Epreuve 2.1, le nombre premier le plus proche de n
 def premier_plus_proche(n):
     trouve=False
     nombre=n
@@ -39,6 +53,7 @@ def premier_plus_proche(n):
             nombre+=1
     return nombre
 
+# Epreuve 2.2, le calcul du nombre premier le plus proche de n
 def epreuve_math_premier():
     n=randint(10,20)
     print("Épreuve de Mathématiques: Trouver le nombre premier le plus proche de",n)
@@ -48,7 +63,7 @@ def epreuve_math_premier():
     else:
         return False
 
-#epreuve 3, la roulette
+# Epreuve 3, la roulette mathématique pour calculer par addition, multiplication ou soustraction de 5 nombres
 def epreuve_roulette_mathematique():
     liste_nb=[]
     somme=0
@@ -74,11 +89,12 @@ def epreuve_roulette_mathematique():
     else:
         return False
 
+##############################################
+# Corps du programme principal
 
-#epreuve générale de maths
+# Epreuve générale de maths
 def epreuve_math()->bool:
     epreuve=[epreuve_factorielle,epreuve_math_premier,epreuve_roulette_mathematique]
     aleatoire=randint(0,2)
     epreuve=epreuve[aleatoire]
     return epreuve()
-print(epreuve_math())

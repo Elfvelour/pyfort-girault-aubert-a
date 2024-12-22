@@ -1,13 +1,20 @@
+##############################################
+####### Programme Python enigme Fouras #######
+####### Auteur: Timothée Girault       #######
+####### Version: 1.3                   #######
+##############################################
+
+##############################################
+# Importation des fonctions externes
+
 from fonctions_utiles import *
 from random import *
 import json
-def charger_enigmes(fichier:str):
-    with open(fichier,'r', encoding='utf8') as f:
-        donnees = json.load(f)
-        return donnees
 
-FICHIER = "./data/enigmesPF.json"
+##############################################
+# Listes de réponses du Père Fouras
 
+# Mauvaise réponse du joueur et le Père Fourars lui répond par une petite pique
 liste_pere_fouras=["Ah, ce n'est pas la bonne réponse... le trésor reste hors de portée pour l'instant !",
 "Mauvaise pioche, mon cher aventurier, il va falloir faire mieux pour mériter vos clés.",
 "Ah, vous êtes tombé dans mon piège... c'est un échec !",
@@ -19,12 +26,26 @@ liste_pere_fouras=["Ah, ce n'est pas la bonne réponse... le trésor reste hors 
 "L’esprit est fort, mais l'énigme était plus rusée, hihihi !",
 "Retournez donc voir Passe-Partout, il vous consolera mieux que moi !"]
 
+# Bonne réponse du joueur et le Père Fouras lui répond en le taquinant
 liste_felicitation_fouras=["Hihihi, voilà qui est étonnant... je pensais que vous alliez échouer !",
 "Une victoire éclatante, mais ne prenez pas trop confiance... mes énigmes se corsent !",
 "Vous êtes aussi rusé qu’un renard... ou ai-je simplement été trop généreux ?",
 "Hé bien, vous avez réussi ! Allez vite chercher votre clé avant que je change d’avis.",
 "C’est une victoire méritée, aventurier. Mais attention, le Fort n’a pas dit son dernier mot."]
 
+##############################################
+# Déclarations des fonctions utilisateurs
+
+# Ouvre le fichier enigmePF.json et renvoie l'intégralité du texte compris dans le fichier
+def charger_enigmes(fichier:str):
+    with open(fichier,'r', encoding='utf8') as f:
+        donnees = json.load(f)
+        return donnees
+
+#chemin du fichier enigmePF.json pour la fonction au dessus
+FICHIER = "./data/enigmesPF.json"
+
+# Fonction qui utilise la fonction au-dessus pour afficher et faire deviner des enigmes
 def enigmes_pere_fouras():
     donnees=charger_enigmes("./data/enigmesPF.json")
     enigme=[]
@@ -43,8 +64,8 @@ def enigmes_pere_fouras():
         else:
             nombre_essais=nombre_essais-1
             print(liste_pere_fouras[randint(0,len(liste_pere_fouras)-1)])
+            print("PS: n'oubliez pas le 'le' ou 'la devant le mot'")
             print("Ils vous restent : ",nombre_essais,"nombres d'essai(s)\n")
     if nombre_essais<1:
         print("Vous avez échoué, bande de nullos,la solution était",enigme["reponse"])
         return False
-
