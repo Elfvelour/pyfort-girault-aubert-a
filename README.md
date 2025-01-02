@@ -37,6 +37,8 @@ Reproduire 4 épreuves de Fort Boyard
 ### Installation
 
 #### Instruction pour clôner le dépôt Github:
+1.Tout d'abord vérifier d'avoir créer le porjet en privé et ajouter le binôme et les professeurs dans les collaborateurs.
+2.
 
 #### Configuration de l'environnement de développement:
 - Installation de l'application Pycharm sur notre PC en récupérant notre licence étudiante sur le site JetBrains²
