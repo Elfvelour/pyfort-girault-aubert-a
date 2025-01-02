@@ -18,11 +18,12 @@ def bonneteau():
     cle=False
     liste=['A','B','C']
     print("Bienvenue au jeux du bonneteau,\nles règles sont simples. Vous avez\n2 tentatives pour trouver la clé\nparmi 3 chois: A, B ou C")
-    print("-------------------------------------")
+    print('------------------------------------------------')
     while tentative<3:
         variable=liste[randint(0,2)]
         print("Il reste :",3-tentative,"tentative(s)")
         choix_joueur = str(input("Choisir un bonneteau: A, B ou C : "))
+        choix_joueur=choix_joueur.upper()
         while choix_joueur!='A'and choix_joueur!='B'and choix_joueur!='C':
             choix_joueur=str(input("Choisir un bonneteau: A, B ou C : "))
         if choix_joueur==variable:
@@ -49,7 +50,7 @@ def lance_de_des():
             print("Vous avez remporté la clé")
             return True
         else:
-            print("-------------------------------")
+            print('------------------------------------------------')
             print("C'est au tour du maître du jeu")
             des_maitre_du_jeu = (randint(1, 6), randint(1, 6))
             print("Le 1er dé est : ", des_maitre_du_jeu[0], " et le 2ème dé est : ", des_maitre_du_jeu[1])
@@ -58,7 +59,7 @@ def lance_de_des():
                 return False
             else:
                 print("On passe au prochain essai!")
-                print("---------------------------")
+                print('------------------------------------------------')
                 essais=essais-1
     if essais==0:
         print("Après trois essais, aucun des joueurs n'a gagné, c'est un match nul")

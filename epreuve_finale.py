@@ -50,9 +50,10 @@ def salle_DE_Tresor(fichier:str):
                 else:
                     print("Le code secret était : ",mot_code)
         if reponse_correcte==True:
-            print("Vous avez gagné")
+            print("Vous avez gagné !")
         else:
-            print("Vous avez perdu")
+            print("Vous avez perdu, bande de vilains et malhonnêtes élèves!")
+            #réference aux remarques de mon ancien prof de maths expertes Mr Candapin
 
 
 #chemin du fichier indicesSalle.json pour la fonction au-dessus

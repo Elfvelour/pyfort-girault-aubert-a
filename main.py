@@ -38,43 +38,72 @@ def jeu():
         if choix_jeux == 0:                     #Il s'agit du jeu de maths
             if epreuve_math() == True:          #On fait jouer le joueur à une épreuve de maths
                 choix_joueur["clés_gagnées"]+=1
-                print(f"Bravo {choix_joueur['nom']} ! Vous avez gagné une clé ! \n")
-                CLES_OBTENUES+=1
+                CLES_OBTENUES += 1
+                print(f"Bravo {choix_joueur['nom']} ! Vous avez gagné une clé ! Vous avez",CLES_OBTENUES,"clé(s)\n")
             else:
                 print("Dommage ! Vous avez perdu le jeu :/ \n")
         if choix_jeux == 1:                     #Il s'agit du jeu de logique (morpion)
             if jeu_tictactoe() == True:          #On Fait jouer le joueur au morpion
                 choix_joueur["clés_gagnées"]+=1
-                print(f"Bravo {choix_joueur['nom']} ! Vous avez gagné une clé ! \n")
-                CLES_OBTENUES+=1
+                CLES_OBTENUES += 1
+                print(f"Bravo {choix_joueur['nom']} ! Vous avez gagné une clé !  Vous avez",CLES_OBTENUES,"clé(s)\n")
             else:
                 print("Dommage ! Vous avez perdu le jeu :/ \n")
         if choix_jeux == 2:                     #Il s'agit du jeu de hasard
             if epreuve_hasard() == True:        #on fait jouer le joueur au jeu de hasard
                 choix_joueur["clés_gagnées"]+=1
-                print(f"Bravo {choix_joueur['nom']} ! Vous avez gagné une clé \n")
-                CLES_OBTENUES+=1
+                CLES_OBTENUES += 1
+                print(f"Bravo {choix_joueur['nom']} ! Vous avez gagné une clé !  Vous avez",CLES_OBTENUES,"clé(s)\n")
             else:
                 print("Dommage ! Vous avez perdu le jeu :/ \n")
         if choix_jeux == 3:                     #Il s'agit des énigmes du Père Fourras
             if enigmes_pere_fouras() == True:      #On fait jouer le joueur aux énigmes de Père Fourras
                 choix_joueur["clés_gagnées"]+=1
-                print("Bravo ! Vous avez gagné une clé ! \n")
-                CLES_OBTENUES+=1
+                CLES_OBTENUES += 1
+                print("Bravo ! Vous avez gagné une clé !  Vous avez",CLES_OBTENUES,"clé(s)\n")
             else:
                 print("Dommage ! Vous avez perdu le jeu :/ \n")
-        else: #Au cas ou la saisie est incorrecte.
-            print("Problème dans le choix du jeu. Réessayer :)")
 
 
     #Après avoir obtenu 3 clés. Le joueur accède à la salle du trésor !
-    print("\n")
-    print("-----------------------")
-    print("\n")
-    print("Vous entrez maintenant dans la salle du trésor ! \n Une dernière énigme vous sera posé. \n Ne vous trompez pas sinon c'est perdu ! \n")
+    print("Passe-Partout et Passe-muraille vous félcite pour vos 3 clés. Voici votre clé géante :")
+    print("------------------------------------------------ \n")
+    print('''                    $$$$XXX$$$                                                                             
+                  $$$&&$$$$&$$$$$$                                                                         
+                $$&&$$$$XX   $$$$&$$                                                                       
+               $$&&&$$$        $$$$$$                                                                      
+              $$&&&$$          $&X&$$                                                                      
+             $$&&&$$           $$$&$$$                                                                     
+            $$$&&&$            $$X&$$$                                                                     
+            $$&&&$$            $$$&&$                                                                      
+           $$&&&&$           $$&$&$&$                                                                      
+           $X&&$$           $$&x$$$$&&$$$$$$$                                                              
+           $X$&$             $&$&$$$$$$$$&&$$$$&&$                                                         
+           $$$&&            $$$&&&$&&&&$&$$$$$$&$&&$$                                                      
+            $X$&$          $$$&&&$    $$&&&$$$$$$$$$&&&&$$$                                                
+            $$X&$$        $$$&&$$       &&&&$&&$&$$$++xX$$$$$$$$$                                          
+              $$$&$$  $$$$$&&&$$             $&&$$$&&&&$$X+xxX$$&&$$$$                                     
+                &$$$$$$$$&&&$$                      X$$$$&&&$$XxxxX$$&$&$$$$                               
+                   $$$$$$$$                              $$$$$$&$$$$XxxX$$$&&$$$$                          
+                                                               X$$$$&&$$$XxxxX$$$&&$$$                     
+                                                                     $$$$$&&$$$x+xX$$&&&$$$                
+                                                                           $$$$&&$$$XXxX$$&&&&$$           
+                                                                                 $$$&&&$$$XXX$$&$$&$$$     
+                                                                                     $$$$$$&&$$XX$$$$$&&$  
+                                                                                    $$$$$$$$$$$$$$$$$$$$$  
+                                                                                    $$$$$$$$$$$$$&$$$$$$   
+                                                                                   $$$$$$$$$$$$$$$         
+                                                                                  $$$$$$$$$$$$$$$          
+                                                                                 $$$$$$$$$$$$$$$           
+                                                                                 $$$$$$$$$$$$$&$           
+                                                                                  $$$$$$$$$$$$$            
+                                                                                       $$$$$$$$            
+                                                                                                           ''')
+    print("------------------------------------------------")
+    print("Vous entrez maintenant dans la salle du trésor ! \nUne dernière énigme vous sera posé. \nNe vous trompez pas sinon c'est perdu ! \n")
     if salle_DE_Tresor("./data/indicesSalle.json"): #Sert à faire commencer l'épreuve finale.
-        print("Vous avez gagné ! (le droit de rejouer)")
+        print("Bravo vous avez volés nos boyards d'or")
     else:
-        print()
+        print("Nos boyards d'or sont à nous AH AH AH!")
 
-
+print(jeu())

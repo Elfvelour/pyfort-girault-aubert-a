@@ -6,10 +6,13 @@
 
 #affiche le texte d'introduction. Ne renvoie rien car elle sert uniquement à l'affichage
 def introduction():
-    bienvenue = "Bonjour joueur ! Bienvenue dans Fort Pyard !"
+    bienvenue = "Bonjour joueur ! Bienvenue dans Fort Pyard !\nIci Passe-Partout, je vous souhaite une bonne aventure!"
     regle_intro = "Voici les règles du jeu :"
     regle = "Votre objectif est simple : Vous aller devoir accomplir des épreuves pour gagner des clés qui vous feront accéder à la salle du trésor !"
-    regle_fin = "L'objectif est donc de ramasser trois clés pour accéder à la salle du trésor. Que python soit avec vous !"
+    regle_fin = "L'objectif est donc de ramasser trois clés pour accéder à la salle du trésor. May Python be with you  !"
+    print("------------------------------------------------")
+    #logo Fort Boyard en ASCII
+    print('''  ____, ____, ___,   ____,    ___,  ____, __  _, ___,   ___,   ____,\n (-|_, (-/  \(-|_)  (-|      (-|_) (-/  \(-\ |  (-|_\_,(-|_)  (-|  \ \n  _|     \__/ _| \_, _|       _|__)  \__/   \|   _|  )  _| \_, _|__/ \n (           (      (        (            (__/  (      (      (     ''')
     print("------------------------------------------------")
     print(bienvenue)
     print('------------------------------------------------')
@@ -57,7 +60,7 @@ def composer_equipe():
                 else:
                     joueurs[i]['leader'] = "non"
         if cpt==0: #Ici aucun chef n'est présent.
-            print("Vu que vous n'avez pas décidé de chef, le chef sera le joueur 1 !")
+            print("Ne soyez pas indéci comme Noémie ou Flavie pour chosir le chef,le chef sera donc le joueur 1 !")
             joueurs[0]['leader'] = "oui"
 
     return joueurs
@@ -65,9 +68,10 @@ def composer_equipe():
 #Permet le choix des épreuves. Renvoie un entier.
 def menu_epreuves():
 
-    epreuves = ["épreuve de mathématiques" , "épreuve de logique", "épreuve du hasard", "énigme du père Fourras"]
+    epreuves = ["épreuve de mathématiques" , "épreuve de logique", "épreuve de hasard", "énigme du Père Fouras"]
 
     #affichage des épreuves proposées
+    print('------------------------------------------------')
     print("Voici le choix des épreuves :")
     for i in range(len(epreuves)):
         print(f"{i+1}. {epreuves[i]}")
@@ -87,6 +91,7 @@ def choisir_joueur(equipe):
 
     #Permet l'affichage des membres de l'équipe
     nb_ligne = 1
+    print('------------------------------------------------')
     for k in equipe:
         ligne =f"{nb_ligne}. {k['nom']} ({k['profession']}) "
         if k['leader']=="oui":
@@ -100,6 +105,7 @@ def choisir_joueur(equipe):
     while choix_joueur<0 or choix_joueur>2:
         print("Problème dans le choix du joueur. Veuillez réessayer :")
         choix_joueur=int(input())-1
+    print('------------------------------------------------')
 
     return equipe[choix_joueur]
 
