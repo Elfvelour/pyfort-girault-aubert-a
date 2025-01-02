@@ -9,10 +9,10 @@
 #On importe toutes les fonctions de tous les fichiers
 from epreuves_logique import *
 from fonctions_utiles import *
-from enigme_pere_fourras import *
+from enigme_pere_fouras import *
 from epreuve_finale import *
-from epreuves_maths import *
-from epreuve_hasard import *
+from epreuves_mathematiques import *
+from epreuves_hasard import *
 
 ########################################################
 
