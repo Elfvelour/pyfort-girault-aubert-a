@@ -60,7 +60,7 @@ def composer_equipe():
                 else:
                     joueurs[i]['leader'] = "non"
         if cpt==0: #Ici aucun chef n'est présent.
-            print("Ne soyez pas indéci comme Noémie ou Flavie pour chosir le chef,le chef sera donc le joueur 1 !")
+            print("Ne soyez pas indéci comme Noémie ou Flavie pour chosir le chef,il sera donc le joueur 1 !")
             joueurs[0]['leader'] = "oui"
 
     return joueurs

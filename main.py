@@ -104,4 +104,4 @@ def jeu():
     if salle_DE_Tresor("./data/indicesSalle.json"): #Sert à faire commencer l'épreuve finale.
         print("Bravo vous avez volés nos boyards d'or")
     else:
-        print("Nos boyards d'or sont à nous AH AH AH AH!")
+        print("Nos boyards d'or sont à nous !")
