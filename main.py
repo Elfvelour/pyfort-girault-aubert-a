@@ -105,5 +105,3 @@ def jeu():
         print("Bravo vous avez volés nos boyards d'or")
     else:
         print("Nos boyards d'or sont à nous AH AH AH!")
-
-print(jeu())
