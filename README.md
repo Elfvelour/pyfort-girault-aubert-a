@@ -71,15 +71,25 @@ Puis de gagner les boyards d'or en trouvant le mot secret dans l'épreuve finale
     
 # Documentation Technique
 ### Algorithme du jeu
+- On commence d'abord par importer les fonctions de chaques fichiers ce qui nous permettra de les utiliser dans le main.
+- Ensuite, on définie la fonction jeu():
+- On utilise les fonctions du fichier fonctions_utiles avec le introduction() et composer_equipe() ce qui permet de faire débuter la partie avec l'explication des règles et la création de l'équipe.
+- On définie la variable CLES_OBTENUES qui nous servira plus tard dans le programme.
+- La boucle while commence. Elle sert à faire continuer le jeu tant que le joueur n'a pas gagné 3 clés.
+- D'abord, on demande au joueur à quel jeu il souhaite jouer puis on demande de sélectionner un joueur de l'équipe qui réalisera l'épreuve.
+- Ensuite on effectue une série de test pour voir si l'épreuve que le joueur à sélectionné correspond à une des épreuves codés. Si c'est le cas, l'épreuve se lance et si le joueur réussi cete dernière. La variable CLES_OBTENUES augmente de 1 et les clés rapporté par le joueur sélectionné au début de l'épreuve augmente aussi de 1.
+- On répète cette action tant que le joueur n'a pas obtenu 3 clés.
+- Quand le joueur a obtenu les 3 clés. On lance la fonction codé dans le fichier epreuve_finale nommé salle_De_Tresor(): et si le joueur réussi cette dernière épreuve, il remporte la partie. Sinon il perd.
+
+
 ### Details des fonctions implémentés
-### Gestion des Entrées et Erreurs
-- Utilisations de boucle while (qui redemande au joueur de soumettre sa réponse) si la réponse du joueur n'est pas dans la sélection des réponses attendus comme A,B ou C dans le jeu du bonneteau
+- 
+
+#### Gestion des Entrées et Erreurs : 
+- Pour les entrées, des saisies sécurisées sont proposées. comme l'utilisations de boucles while (qui redemande au joueur de soumettre sa réponse) si la réponse du joueur n'est pas dans la sélection des réponses attendus comme A,B ou C dans le jeu du bonneteau
+- Plusieurs tests ont été effectués avec des erreurs comises volontairement. Le programme s'en sors bien sans trop de soucis. Par exemple, si on nomme 2 chefs dans une équipe, le programme le détecte et demande de saisir le bon chef. Dans le morpion, la saisie est complètement sécurisé (tout types d'erreurs ont été comises et le programme redemande la saisie des coordonnés).
+- Les erreurs connues sont les suivantes : lorsque qu'on demande la saisie d'un entier (int), si on met un caractère (str) à la place, le programme plante...
 - Mettre la réponse soit totalement en majuscule ou en minuscule (pour savoir si la réponse est bonne ou non) pour éviter d'avoir la bonne réponse en majuscule, dans la liste en minuscule et de renvoyer une mauvaise réponse.
-#### Liste des bugs:
-- list out of range
-- variable is no defined
-- expected an indented block
-- [Errno 2] No such file or directory
 # Journal de bord
 ### Chronologie du Projet:
 - 6 décembre : Début du projet avec la création de tous les fichiers '.py', début du morpion, le fichier epreuves_mathématiques fini et epreuves_hasard commencés. Petit problème concernant la création de la fonction 'epreuve' (dans epreuves_mathématiques) par rapport à la liste qui permet de choisir aléatoirement l'épreuve.C'était comment écrire les épreuves dans la liste. J'ai résolu le problème à l'aide d'un camarade de classe qui m'a aidé.
@@ -90,7 +100,7 @@ Puis de gagner les boyards d'or en trouvant le mot secret dans l'épreuve finale
 
 - 22 décembre : fichier epreuve_finale fini. 
 
-- Semaine du 23 décembre : fichier fonctions_utiles et main terminés. Donc tous les fichiers du projet ont été aboutis.
+- Semaine du 23 décembre : fichier fonctions_utiles et main terminés sans trop de difficulté. Donc tous les fichiers du projet ont été aboutis.
  
 - Semaine du 29 décembre: relecture de tous les fichiers, derniers tests et rédaction du fichier readme
 ### Répartition des tâches
