@@ -74,5 +74,5 @@ def enigmes_pere_fouras():
             print("PS: n'oubliez pas le 'le' ou 'la devant le mot'")
             print("Ils vous restent : ",nombre_essais,"essai(s)\n")
     if nombre_essais<1:
-        print("Vous avez échoué, bande de vilains,la solution était",enigme["reponse"])
+        print("Vous avez échoué, bande de vilains, la solution était",enigme["reponse"])
         return False

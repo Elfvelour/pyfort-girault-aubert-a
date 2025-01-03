@@ -106,7 +106,7 @@ def epreuve_roulette_mathematique():
 ##############################################
 # Corps du programme principal
 
-# Epreuve générale de maths: chosi aléatoirement une des 3 épreuves parmi une liste et lance cette épreuve
+# Epreuve générale de maths: chosi aléatoirement une des 3 épreuves parmi une liste et on lance cette épreuve
 def epreuve_math()->bool:
     epreuve=[epreuve_factorielle,epreuve_math_premier,epreuve_roulette_mathematique]
     aleatoire=randint(0,2)
