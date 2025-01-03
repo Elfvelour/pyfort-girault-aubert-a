@@ -2,7 +2,7 @@
 ### Contributeurs:
 #### -Thomas Aubert
 rôle: codage des fonctions utiles, logiques et main
-#### -Timothée Girault:
+#### -Timothée Girault
 rôle: codage des fonctions finales, mathématiques, hasard et Père Fouras
 ### Description
 Création du jeux mythique Fort Boyard en Python. Le ou les joueur(s) doivent rassembler 3 clés au travers de 4 thèmes:
@@ -82,15 +82,22 @@ Puis de gagner les boyards d'or en trouvant le mot secret dans l'épreuve finale
 - [Errno 2] No such file or directory
 # Journal de bord
 ### Chronologie du Projet:
-- Semaine du 9 décembre : Début du projet avec le début du morpion, le fichier epreuves_maths et epreuve_hasard commencés.
+- 6 décembre : Début du projet avec la création de tous les fichiers '.py', début du morpion, le fichier epreuves_mathématiques fini et epreuves_hasard commencés. Petit problème concernant la création de la fonction 'epreuve' (dans epreuves_mathématiques) par rapport à la liste qui permet de choisir aléatoirement l'épreuve.C'était comment écrire les épreuves dans la liste. J'ai résolu le problème à l'aide d'un camarade de classe qui m'a aidé.
 
-- Semaine du 16 décembre : Morpion terminé, fichier epreuve_hasard, epreuve_maths, enigme_pere_fourras et epreuve_finale terminés.
+- 13 décembre: fichier epreuve_hasard fini. Problème d'affichage pour écrire les règles du bonneteau, avec plusieurs lignes sans espaces entre chaque ligne. J'ai mis un petit peu de temps avant de réaliser qu'il fallait juste mettre un '\n' quand on voulait retourner à la ligne. Décision finale de partage des tâches: Thomas code le main, les fonctions utiles et le morpion et moi le reste car il met beaucoup de temps à finir le morpion, j'avance beaucoup plus vite que lui et pour respecter le partage égal des tâches
+
+- 20 décembre : Morpion terminé, correction mineur du fichier epreuves_mathématiques pour la fonction est_premier, début du codage de l'épreuve finale et finalisation des énigmes du Père Fouras. Problème majeur qui m'aura pris beaucoup de temps (des 3h de projet le vendredi) sur le fichier enigme_pere_fouras pour mettre le fichier json dans le bon dossier du projet, taper le bon chemin vers ce fichier afin que la fonction marche sans erreur. J'ai résolu ce problème grâce à un camarade et le professeur Monsieur Elloumi. Ajout égalemment de phrases du Père Fouras (pour mettre un peu d'originalité dans le code) dans le code pour féliciter ou taquiner les joueurs.
+
+- 22 décembre : fichier epreuve_finale fini. 
 
 - Semaine du 23 décembre : fichier fonctions_utiles et main terminés. Donc tous les fichiers du projet ont été aboutis.
  
 - Semaine du 29 décembre: relecture de tous les fichiers, derniers tests et rédaction du fichier readme
 ### Répartition des tâches
+- Chacun travaille dans les tâches qui lui ont été attribués. Puis on regarde le code du binôme pour s'assurer que tout est claire et que la consigne a bien été respecté.
+
 - Timothée GIRAULT: epreuves_maths, epreuves_hasard, epreuve_finale et enigme_pere_fourras
+  Chaque version du code '1.x' corespond au nombre x de vendredi passé sur le fichier.
 
 - Thomas AUBERT : epreuve_logique, fonctions_utiles, main
 
