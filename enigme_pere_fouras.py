@@ -42,7 +42,7 @@ def charger_enigmes(fichier:str):
         donnees = json.load(f)
         return donnees
 
-#chemin du fichier enigmePF.json pour la fonction au dessus
+#chemin du fichier enigmePF.json pour la fonction au dessus charger_enigmes
 FICHIER = "./data/enigmesPF.json"
 
 # Fonction qui utilise la fonction au-dessus pour afficher et faire deviner des enigmes du Père Fouras

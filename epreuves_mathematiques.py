@@ -80,7 +80,7 @@ def epreuve_roulette_mathematique():
     #choisi 5 nombres au hasard entre 1 et 20
     for i in range(5):
         liste_nb.append(randint(1,20))
-    # choisi au hasard une des opérations
+    # choisi au hasard une des opérations +,- ou *
     operation=randint(1,3)
     print(liste_nb[:])
     #calcule pour l'opération choisi le résultat des 5 nombres et de demande à l'utilisteur sa réponse

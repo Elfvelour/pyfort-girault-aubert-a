@@ -12,7 +12,7 @@ from random import *
 ##############################################
 # Déclaration des fonctions utilisateurs
 
-#demande aux joueur de trouver la clé parmi 3 choix A,B,C et renvoie s'il a vrai ou faux
+#demande aux joueur de trouver la clé sous 3 lettres parmi A,B,C et renvoie s'il a vrai ou faux
 def bonneteau():
     tentative=1
     liste=['A','B','C']

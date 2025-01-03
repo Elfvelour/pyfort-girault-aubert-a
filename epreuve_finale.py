@@ -40,7 +40,7 @@ def salle_DE_Tresor(fichier:str):
         print("--------------------------------------------")
         essais=3
         reponse_correcte = False
-        #boucle while qui compare la réponse du joueur et de la solution, décrémente les essais, renvoie un indice supplémentaire
+        #boucle while qui compare la réponse du joueur et celle de la solution, décrémente les essais, renvoie un indice supplémentaire
         # si échec et renvoie la solution si le joueur ne le trouve en 3 essais avec 5 indices en tout
         while essais>0:
             reponse_joueur=str(input("Saisir une réponse : "))
