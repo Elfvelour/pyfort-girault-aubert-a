@@ -91,6 +91,7 @@ Puis de gagner les boyards d'or en trouvant le mot secret dans l'épreuve finale
 
 
 ### Details des fonctions implémentés
+
 ### Epreuves de logiques:
 
 #### fonction *afficher(grille)*
@@ -101,6 +102,13 @@ Elle renvoie True si les coordonnées saisies par le joueur sont valides. Elle r
 
 #### fonction *tour_joueur(grille)*
 Elle permet de saisir le coup du joueur. Elle ne renvoie rien.
+ 
+ #### fonction *afficher(grille):*
+ - Prend en paramètre un tableau et qui renvoie un tableau. Elle sert uniquement d'affichage.
+   
+ #### Fonction *est_entree_valide(entree):*
+ - elle renvoie True si les coordonnées saisies par le joueur sont valides. Elle renvoie False sinon.
+
 
 #### fonction *verifier_victoire(grille,symbole)*
 Elle prend en paramètre la grille de jeu et le symbole que le souhaite verifier si il y a victoire. Elle renvoie True s'il y a victoire. Renvoie False sinon.
