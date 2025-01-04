@@ -95,7 +95,7 @@ Puis de gagner les boyards d'or en trouvant le mot secret dans l'épreuve finale
  
  #### fonction *afficher(grille):*
  - Prend en paramètre un tableau et qui renvoie un tableau. Elle sert uniquement d'affichage.
- - 
+   
  #### Fonction *est_entree_valide(entree):*
  - elle renvoie True si les coordonnées saisies par le joueur sont valides. Elle renvoie False sinon.
 
