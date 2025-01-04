@@ -123,8 +123,15 @@ C'est la deuxième épreuve du module, qui choisi aléatoirement un entier n ent
 C'est la troisième épreuve du module, qui choisi au hasard soit une multiplication, addition ou soustravtion de tout les nombres (5 nombres générés aléatoirement).
 #### Fonction *epreuve_math()*
 Cette fonction prend au hasard une des 3 épreuves et lance le jeu de cette dernière.
+Elle fait appel aux fonctions *__epreuve_roulette_mathematique()__*,*__epreuve_math_premier()__* et *__epreuve_factorielle()__*
 
 ### Epreuves de hasard:
+#### Fonction *bonneteau()*
+C'est la première épreuve du module ds épreuves de hasard, qui choisi aléatoirment où la clé est caché parmi 3 verres: A, B ou C. On a 2 tentatives pour la trouver
+#### Fonction  *lance_de_des()*
+#### Fonction  *epreuve_hasard()*
+Cette fonction choisi au hasard l'une des 2 épreuves du module et la renvoie. Elle fait appel aux
+fonctions *__lance_de_des()__* et *__bonneteau()__*.
 ### Epreuves de logiques
 ### Epreuve finale:
 ### Fonctions utiles:
@@ -176,7 +183,7 @@ Cette fonction prend au hasard une des 3 épreuves et lance le jeu de cette dern
   
 - Avant de commit on vérifie si tous les noms de variables sont claires, s'il n'y a pas de fautes d'orthographe ou de codes.
 <p align="left">
-<img src="screenshot test projet/image5.png"    width="350" title="image5" />
+<img src="screenshot test projet/image5.png"    width="350"  />
 </p>
 <p align="left">
 <img src="screenshot test projet/image4.png"    width="350"/>
