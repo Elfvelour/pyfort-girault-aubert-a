@@ -14,7 +14,7 @@ import json
 ##############################################
 # Listes de réponses du Père Fouras
 
-# Mauvaise réponse du joueur et le Père Fourars lui répond par une petite pique
+# Mauvaise réponse du joueur et le Père Fourars lui répond par une petite phrase
 liste_pere_fouras=["Ah, ce n'est pas la bonne réponse... le trésor reste hors de portée pour l'instant !",
 "Mauvaise pioche, mon cher aventurier, il va falloir faire mieux pour mériter vos clés.",
 "Ah, vous êtes tombé dans mon piège... c'est un échec !",
@@ -75,4 +75,5 @@ def enigmes_pere_fouras():
             print("Ils vous restent : ",nombre_essais,"essai(s)\n")
     if nombre_essais<1:
         print("Vous avez échoué, bande de vilains, la solution était",enigme["reponse"])
+        #référence à un surnom que le prof de maths experte nous donnais
         return False
