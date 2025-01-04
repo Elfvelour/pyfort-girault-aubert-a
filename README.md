@@ -83,7 +83,7 @@ Puis de gagner les boyards d'or en trouvant le mot secret dans l'épreuve finale
 
 6. D'abord, on demande au joueur à quel jeu il souhaite jouer puis on demande de sélectionner un joueur de l'équipe qui réalisera l'épreuve.
 
-7. Ensuite on effectue une série de test pour voir si l'épreuve que le joueur à sélectionné correspond à une des épreuves codés. Si c'est le cas, l'épreuve se lance et si le joueur réussi cette dernière, il gagne une clé. Alors la variable CLES_OBTENUES augmente de 1 et les clés rapporté par le joueur sélectionné au début de l'épreuve augmente aussi de 1.
+7. Ensuite on effectue une série de test pour voir si l'épreuve que le joueur à sélectionné correspond à une des épreuves codés. Si c'est le cas, l'épreuve se lance et si le joueur réussi cette dernière, il gagne une clé. Alors la variable CLES_OBTENUES augmente de 1 et les clés rapporté par le joueur sélectionné au début de l'épreuve augmente de 1.
 
 8. On répète cette action tant que le joueur n'a pas obtenu 3 clés.
 
