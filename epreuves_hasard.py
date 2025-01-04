@@ -12,11 +12,11 @@ from random import *
 ##############################################
 # Déclaration des fonctions utilisateurs
 
-#demande aux joueur de trouver la clé sous 3 lettres parmi A,B,C et renvoie s'il a vrai ou faux
+#demande aux joueurs de trouver la clé sous 3 lettres parmi A,B,C et renvoie vrai ou faux en fonction de la réponse finale du joueur
 def bonneteau():
     tentative=1
     liste=['A','B','C']
-    print("Bienvenue au jeux du bonneteau,\nles règles sont simples. Vous avez\n2 tentatives pour trouver la clé\nparmi 3 chois: A, B ou C")
+    print("Bienvenue au jeu du bonneteau,\nles règles sont simples. Vous avez\n2 tentatives pour trouver la clé\nparmi 3 choix: A, B ou C")
     print("-------------------------------------")
     #boucle while qui permet de savoir la réponse de l'utilisateur et de le comparer à la solution choisi au hasard
     while tentative<3:
