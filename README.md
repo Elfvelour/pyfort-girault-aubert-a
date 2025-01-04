@@ -175,7 +175,19 @@ Cette fonction prend au hasard une des 3 épreuves et lance le jeu de cette dern
 - On teste chaque fonction après l'avoir codé en utilisant un print pour s'assurer qu'il renvoie bien ce qu'on voulait.
   
 - Avant de commit on vérifie si tous les noms de variables sont claires, s'il n'y a pas de fautes d'orthographe ou de codes.
-<p align="center">
-<img src="C:\Users\girau\OneDrive\Images\Captures d’écran\anglaisslide"    width="350"/>
+<p align="left">
+<img src="screenshot test projet/image5.png"    width="350" title="image5" />
 </p>
-![Capture d'écran 2024-09-16 082541](https://github.com/user-attachments/assets/171f6354-6e73-4186-8014-36f0b36eca83)
+<p align="left">
+<img src="screenshot test projet/image4.png"    width="350"/>
+</p>
+<p align="left">
+<img src="screenshot test projet/image3.png"    width="350"/>
+</p>
+<p align="left">
+<img src="screenshot test projet/image2.png"    width="350"/>
+</p>
+<p align="left">
+<img src="screenshot test projet/image1.png"    width="350"/>
+</p>
+
