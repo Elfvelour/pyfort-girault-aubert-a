@@ -5,7 +5,7 @@ rôle: codage des fonctions utiles, logiques et main
 #### -Timothée Girault
 rôle: codage des fonctions finales, mathématiques, hasard et Père Fouras
 ### Description
-Création du jeux mythique Fort Boyard en Python. Le ou les joueur(s) doivent rassembler 3 clés au travers de 4 thèmes:
+Création du jeux mythique Fort Boyard en Python. Le ou les joueur(s) doit ou doivent rassembler 3 clés au travers de 4 thèmes:
 
 -Les épreuves de logiques
 
@@ -15,7 +15,7 @@ Création du jeux mythique Fort Boyard en Python. Le ou les joueur(s) doivent ra
 
 -Les énigmes du Père Fouras
 
-Puis de gagner les boyards d'or en trouvant le mot secret dans l'épreuve finale
+Puis de gagner les boyards d'or en trouvant le mot secret dans l'épreuve finale. Le jeux se déroule sur une console Python.
 
 ### Fonctionalités principales du projet
 - Coordination de plusieurs fichiers
@@ -25,7 +25,7 @@ Puis de gagner les boyards d'or en trouvant le mot secret dans l'épreuve finale
 - Création d'un jeu interactif
 
 ### Technologies Utilisées
-- Langage python	
+- __Langage Python__
 
 - Pycharm
 
@@ -91,52 +91,54 @@ Puis de gagner les boyards d'or en trouvant le mot secret dans l'épreuve finale
 
 
 ### Details des fonctions implémentés
- Fonctions de la partie de Thomas :
- 
- #### fonction *afficher(grille):*
- - Prend en paramètre un tableau et qui renvoie un tableau. Elle sert uniquement d'affichage.
- - 
- #### Fonction *est_entree_valide(entree):*
- - elle renvoie True si les coordonnées saisies par le joueur sont valides. Elle renvoie False sinon.
+### Epreuves de logiques:
 
- #### fonction *tour_joueur(grille):*
- - Elle permet de saisir le coup du joueur. Elle ne renvoie rien.
+#### fonction *afficher(grille)*
+ Prend en paramètre un tableau et qui renvoie un tableau. Elle sert uniquement d'affichage.
 
- #### fonction *verifier_victoire(grille,symbole):*
- - Elle prend en paramètre la grille de jeu et le symbole que le souhaite verifier si il y a victoire. Elle renvoie True s'il y a victoire. Renvoie False sinon.
+#### Fonction *est_entree_valide(entree)*
+Elle renvoie True si les coordonnées saisies par le joueur sont valides. Elle renvoie False sinon.
 
- #### fonction *grille_complete(grille):*
- - Elle prend en paramètre la grille de jeu. Elle renvoie True si toutes les cases sont remplies. Renvoie False sinon.
+#### fonction *tour_joueur(grille)*
+Elle permet de saisir le coup du joueur. Elle ne renvoie rien.
 
- #### fonction *verifier_resultat(grille):*
- - La  permet juste de verifier s'il y a une victoire (et de qui ?) ou un match nul. Elle renvoie qui à gagné ou s'il y a match nul
+#### fonction *verifier_victoire(grille,symbole)*
+Elle prend en paramètre la grille de jeu et le symbole que le souhaite verifier si il y a victoire. Elle renvoie True s'il y a victoire. Renvoie False sinon.
 
- #### fonction *coup_maitre(grille, symbole):*
- - Elle prend en paramètre la grille de jeu et permet de connaitre le meilleur coup à jouer pour le maitre selon des règles précises. Elle renvoie un tuple qui correspond aux coordonnées du coup à jouer.
+ #### fonction *grille_complete(grille)*
+ Elle prend en paramètre la grille de jeu. Elle renvoie True si toutes les cases sont remplies. Renvoie False sinon.
 
- #### fonction *tour_maitre(grille):*
- - Elle permet de faire jouer le maitre.
+#### fonction *verifier_resultat(grille)*
+La  permet juste de verifier s'il y a une victoire (et de qui ?) ou un match nul. Elle renvoie qui à gagné ou s'il y a match nul
 
- #### fonction *jeu_tictactoe():*
- - Elle permet simplement le déroulement de la partie.
+#### fonction *coup_maitre(grille, symbole)*
+Elle prend en paramètre la grille de jeu et permet de connaitre le meilleur coup à jouer pour le maitre selon des règles précises. Elle renvoie un tuple qui correspond aux coordonnées du coup à jouer.
 
- #### fonction *introduction():*
- - Elle premet l'affichage des règles du jeu.
+#### fonction *tour_maitre(grille)*
+ Elle permet de faire jouer le maitre.
 
- #### fonction *composer_equipe():*
- - Elle permet de composer les équipes. Elle renvoie une liste de dictionnaires.
+#### fonction *jeu_tictactoe()*
+Elle permet simplement le déroulement de la partie.
 
- #### *fonction menu_epreuve():*
- - Elle permet la sélection de l'épreuve. Elle renvoie le choix du joueur (int).
+### Fonctions utiles:
 
- #### fonction *choisir_joueur():*
- - la  permet d'afficher les joueurs de l'équipe puis de demander de sélectionner le joueur qui réalisera l'épreuve. Elle renvoie un dictionnaire.
+#### fonction *introduction()*
+Elle premet l'affichage des règles du jeu.
 
- #### fonction *mot_minuscule(mot):*
- - Elle permet de rendre une chaine de caracère en majuscule en minuscule.
+#### fonction *composer_equipe()*
+Elle permet de composer les équipes. Elle renvoie une liste de dictionnaires.
 
- #### fonction *jeu():*
- - Elle correspond à la fonction principale du jeu. Elle s'occupe du déroulé du jeu. Donc la fonction ne renvoie rien.
+#### *fonction menu_epreuve()*
+Elle permet la sélection de l'épreuve. Elle renvoie le choix du joueur (int).
+
+#### fonction *choisir_joueur()*
+Elle  permet d'afficher les joueurs de l'équipe puis de demander de sélectionner le joueur qui réalisera l'épreuve. Elle renvoie un dictionnaire.
+
+#### fonction *mot_minuscule(mot)*
+Elle permet de rendre une chaine de caracère en majuscule en minuscule.
+
+#### fonction *jeu()*
+Elle correspond à la fonction principale du jeu. Elle s'occupe du déroulé du jeu. Donc la fonction ne renvoie rien.
 
 
 ### Epreuves de mathématiques:
@@ -158,15 +160,21 @@ Elle fait appel aux fonctions *__epreuve_roulette_mathematique()__*,*__epreuve_m
 
 ### Epreuves de hasard:
 #### Fonction *bonneteau()*
-C'est la première épreuve du module ds épreuves de hasard, qui choisi aléatoirment où la clé est caché parmi 3 verres: A, B ou C. On a 2 tentatives pour la trouver
+C'est la première épreuve du module des épreuves de hasard, qui choisi aléatoirment où la clé est caché parmi 3 verres: A, B ou C. On a 2 tentatives pour la trouver.
 #### Fonction  *lance_de_des()*
+C'est la deuxième version du module, qui lance 2 dés aléatoirement pour le joueur et le maître du jeu. Le joueur peut gagner en obtenant un 6 en 3 manches.
 #### Fonction  *epreuve_hasard()*
 Cette fonction choisi au hasard l'une des 2 épreuves du module et la renvoie. Elle fait appel aux
 fonctions *__lance_de_des()__* et *__bonneteau()__*.
-### Epreuves de logiques
 ### Epreuve finale:
-### Fonctions utiles:
+#### Fonction *salle_DE_Tresor(fichier:str)*
+Cette fonction lit le fichier indicesSalle.json en paramètre, le charge sur une variable, choisi au hasard une année,une émission où se situe les indices et le mot caché et le fait deviner aux joueurs.
 ### Enigme Père Fouras:
+#### Fonction *charger_enigmes(fichier:str)*
+Cette fonction lit le fichier enigmesPF.json et renvoie les données chargés sous forme de liste
+#### Fonction *enigmes_pere_fouras()*
+Cette fonction prend au hasard une énigme parmi la liste retourné et la fait deviner aux joueur qui ont droit à 3 essais.Elle fait appel à la fonction *__charger_enigmes(fichier:str)__*
+
 
 
 
@@ -198,7 +206,7 @@ fonctions *__lance_de_des()__* et *__bonneteau()__*.
   
 - 3 janvier: avancement du fichier readme,ajout de 2 images en ASCII pour mettre un peu d'origianlité, changements mineur dans les commentaires.
 
-
+- 4 janvier: fin du projet et envoie du fichier zip
 
 Journal de Thomas :
 - 6 Décembre, début du projet : J'ai directement voulu commencer par le morpion car j'avais déjà réalisé le code auparavant mais à 2 joueurs. J'ai donc voulu commencé par ça car ça me semblait plus simple. Il me suffisait d'ajuster mon programme déjà existant. Mais j'ai eu beaucoup de mal à comprendre pourquoi il fallait faire autant de fonctions dans le projet.
