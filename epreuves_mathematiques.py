@@ -94,6 +94,7 @@ def epreuve_roulette_mathematique():
             somme= somme-liste_nb[i]
         print("Calculez le résultat en combinant ces nombres avec une soustraction")
     else:
+        somme = 1
         for i in range(5):
             somme = somme * liste_nb[i]
         print("Calculez le résultat en combinant ces nombres avec une mulitplication")
