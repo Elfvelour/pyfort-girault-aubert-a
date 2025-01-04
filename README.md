@@ -137,6 +137,22 @@ fonctions *__lance_de_des()__* et *__bonneteau()__*.
 ### Fonctions utiles:
 ### Enigme Père Fouras:
 
+<p align="left">
+<img src="screenshot test projet/image5.png"    width="350"  />
+</p>
+<p align="left">
+<img src="screenshot test projet/image4.png"    width="350"/>
+</p>
+<p align="left">
+<img src="screenshot test projet/image3.png"    width="350"/>
+</p>
+<p align="left">
+<img src="screenshot test projet/image2.png"    width="350"/>
+</p>
+<p align="left">
+<img src="screenshot test projet/image1.png"    width="350"/>
+</p>
+
 #### Gestion des Entrées et Erreurs : 
 - Pour les entrées, des saisies sécurisées sont proposées. On peut prendre l'exemple de l'utilisations de boucles while, si la réponse du joueur n'est pas dans la sélection des réponses attendus ( soit A,B ou C dans le jeu du bonneteau), la boucle redemande au joueur de soumettre sa réponse.
 - Plusieurs tests ont été effectués avec des erreurs comises volontairement. Le programme arrive à fonctionner sans trop de problèmes. Par exemple, si on nomme 2 chefs dans une équipe, le programme le détecte et demande de saisir le bon chef. Dans le morpion, la saisie est complètement sécurisé (tout types d'erreurs ont été comises et le programme redemande la saisie des coordonnés).
@@ -182,19 +198,6 @@ fonctions *__lance_de_des()__* et *__bonneteau()__*.
 - On teste chaque fonction après l'avoir codé en utilisant un print pour s'assurer qu'il renvoie bien ce qu'on voulait.
   
 - Avant de commit on vérifie si tous les noms de variables sont claires, s'il n'y a pas de fautes d'orthographe ou de codes.
-<p align="left">
-<img src="screenshot test projet/image5.png"    width="350"  />
-</p>
-<p align="left">
-<img src="screenshot test projet/image4.png"    width="350"/>
-</p>
-<p align="left">
-<img src="screenshot test projet/image3.png"    width="350"/>
-</p>
-<p align="left">
-<img src="screenshot test projet/image2.png"    width="350"/>
-</p>
-<p align="left">
-<img src="screenshot test projet/image1.png"    width="350"/>
-</p>
+
+
 
