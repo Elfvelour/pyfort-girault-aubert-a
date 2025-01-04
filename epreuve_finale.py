@@ -14,7 +14,7 @@ from fonctions_utiles import *
 ##############################################
 # Déclaration des fonctions utilisateurs
 
-# Fonction qui lance le jeu finale pour trouver un mot secret à l'aide de 5 indices
+# Fonction qui lance le jeu finale pour trouver un mot secret à l'aide de 5 indices au maximum
 def salle_DE_Tresor(fichier:str):
     #On ouvre le fichier et on télécharge l'intégralité du texte sur jeux_tv
     with open(fichier,'r',encoding='utf8') as f:
