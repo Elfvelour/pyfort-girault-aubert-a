@@ -76,7 +76,7 @@ def epreuve_math_premier():
 # ou soustraction de 5 nombres et renvoie vrai ou faux si son résultat est bon ou pas
 def epreuve_roulette_mathematique():
     liste_nb=[]
-    somme=0
+    resultat=0
     #choisi 5 nombres au hasard entre 1 et 20
     for i in range(5):
         liste_nb.append(randint(1,20))
@@ -87,19 +87,19 @@ def epreuve_roulette_mathematique():
     #et renvoie vraie ou faux s'il a bon ou pas
     if operation==1:
         for i in range(5):
-            somme+=liste_nb[i]
+            resultat+=liste_nb[i]
         print("Calculez le résultat en combinant ces nombres avec une addition")
     elif operation==2:
         for i in range(5):
-            somme= somme-liste_nb[i]
+            resultat= resultat-liste_nb[i]
         print("Calculez le résultat en combinant ces nombres avec une soustraction")
     else:
-        somme = 1
+        resultat = 1
         for i in range(5):
-            somme = somme * liste_nb[i]
+            resultat = resultat * liste_nb[i]
         print("Calculez le résultat en combinant ces nombres avec une mulitplication")
     reponse=int(input("Votre réponse : "))
-    if reponse==somme:
+    if reponse==resultat:
         return True
     else:
         return False
