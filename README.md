@@ -97,11 +97,14 @@ Puis de gagner les boyards d'or en trouvant le mot secret dans l'épreuve finale
 - Pour les entrées, des saisies sécurisées sont proposées. On peut prendre l'exemple de l'utilisations de boucles while, si la réponse du joueur n'est pas dans la sélection des réponses attendus ( soit A,B ou C dans le jeu du bonneteau), la boucle redemande au joueur de soumettre sa réponse.
 - Plusieurs tests ont été effectués avec des erreurs comises volontairement. Le programme arrive à fonctionner sans trop de problèmes. Par exemple, si on nomme 2 chefs dans une équipe, le programme le détecte et demande de saisir le bon chef. Dans le morpion, la saisie est complètement sécurisé (tout types d'erreurs ont été comises et le programme redemande la saisie des coordonnés).
 - Mettre la réponse soit totalement en majuscule ou en minuscule (pour savoir si la réponse est bonne ou non) pour éviter d'avoir la bonne réponse en majuscule, dans la liste en minuscule et de renvoyer une mauvaise réponse.
-#### Liste des bugs connue:
--Lorsque qu'on demande la saisie d'un entier (int), si on met un caractère (str) à la place, le programme plante
--L'oubli de définir une variable: 'variable is not defined'
--Un intervalle qui met 'out of range' la liste
--Le fichier qui n'est pas trouvé avec l'erreur '[Errno 2] No such file or directory'
+#### Liste des bugs connus:
+- Lorsque qu'on demande la saisie d'un entier (int), si on met un caractère (str) à la place, le programme plante
+
+- L'oubli de définir une variable: 'variable is not defined'
+
+- Un intervalle qui met 'out of range' la liste
+
+- Le fichier qui n'est pas trouvé avec l'erreur '[Errno 2] No such file or directory'
 # Journal de bord
 ### Chronologie du Projet:
 - 6 décembre : Début du projet avec la création de tous les fichiers '.py', début du morpion, le fichier epreuves_mathématiques fini et epreuves_hasard commencés. Petit problème concernant la création de la fonction 'epreuve' (dans epreuves_mathématiques) par rapport à la liste qui permet de choisir aléatoirement l'épreuve.C'était comment écrire les épreuves dans la liste. J'ai résolu le problème à l'aide d'un camarade de classe qui m'a aidé.
@@ -131,3 +134,7 @@ Puis de gagner les boyards d'or en trouvant le mot secret dans l'épreuve finale
 - On teste chaque fonction après l'avoir codé en utilisant un print pour s'assurer qu'il renvoie bien ce qu'on voulait.
   
 - Avant de commit on vérifie si tous les noms de variables sont claires, s'il n'y a pas de fautes d'orthographe ou de codes.
+<p align="center">
+<img src="C:\Users\girau\OneDrive\Images\Captures d’écran\anglaisslide"    width="350"/>
+</p>
+![800px-Adrien_TOUATI](https://github.com/user-attachments/assets/72196b1c-e347-40de-9f6a-1ce4e809c614)
