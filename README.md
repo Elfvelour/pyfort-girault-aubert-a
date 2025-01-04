@@ -5,7 +5,7 @@ rôle: codage des fonctions utiles, logiques et main
 #### -Timothée Girault
 rôle: codage des fonctions finales, mathématiques, hasard et Père Fouras
 ### Description
-Création du jeux mythique Fort Boyard en Python. Le ou les joueur(s) doit ou doivent rassembler 3 clés au travers de 4 thèmes:
+Création du jeu mythique Fort Boyard en Python. Le ou les joueur(s) doit ou doivent rassembler 3 clés au travers de 4 thèmes:
 
 -Les épreuves de logiques
 
@@ -15,7 +15,7 @@ Création du jeux mythique Fort Boyard en Python. Le ou les joueur(s) doit ou do
 
 -Les énigmes du Père Fouras
 
-Puis de gagner les boyards d'or en trouvant le mot secret dans l'épreuve finale. Le jeux se déroule sur une console Python.
+Puis de gagner les boyards d'or en trouvant le mot secret dans l'épreuve finale. Le jeu se déroule sur une console Python.
 
 ### Fonctionalités principales du projet
 - Coordination de plusieurs fichiers
@@ -38,7 +38,7 @@ Puis de gagner les boyards d'or en trouvant le mot secret dans l'épreuve finale
 ### Installation
 
 #### Instruction pour clôner le dépôt Github:
-1.Tout d'abord, vérifier d'avoir créer le projet en privé et ajouter le binôme ainsi que les professeurs dans les collaborateurs.
+1.Tout d'abord, vérifier d'avoir créer le projet en privé et d'ajouter le binôme ainsi que les professeurs dans les collaborateurs.
 
 2.Ouvrir le projet puis aller dans code, cliquer sur le bouton vert 'code' et copier le lien https
 
@@ -192,7 +192,7 @@ Cette fonction prend au hasard une énigme parmi la liste retourné et la fait d
 #### Liste des bugs connus:
 - Lorsque qu'on demande la saisie d'un entier (int), si on met un caractère (str) à la place, le programme plante
 
-- L'oubli de définir une variable: 'variable is not defined'
+- L'oublie de définir une variable: 'variable is not defined'
 
 - Un intervalle qui met 'out of range' la liste
 
