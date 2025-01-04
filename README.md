@@ -137,18 +137,32 @@ fonctions *__lance_de_des()__* et *__bonneteau()__*.
 ### Fonctions utiles:
 ### Enigme Père Fouras:
 
+Test des erreurs sur le morpion.
 <p align="left">
 <img src="screenshot test projet/image5.png"    width="350"  />
 </p>
+
+
+Test sur le nombre de joueurs dans une équipe (fonction *composer_equipe():*)
 <p align="left">
 <img src="screenshot test projet/image4.png"    width="350"/>
 </p>
+
+
+Test sur la saisie des joueurs des équipes. Plus précisément si il y a 2 chefs (ou plus) dans une même équipe.
 <p align="left">
 <img src="screenshot test projet/image3.png"    width="350"/>
 </p>
+
+
+Test sur le choix des épreuves.
 <p align="left">
 <img src="screenshot test projet/image2.png"    width="350"/>
 </p>
+
+
+
+Test sur la saisie du joueur qui doit réaliser l'épreuve.
 <p align="left">
 <img src="screenshot test projet/image1.png"    width="350"/>
 </p>
