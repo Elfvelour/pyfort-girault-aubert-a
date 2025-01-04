@@ -95,7 +95,7 @@ Puis de gagner les boyards d'or en trouvant le mot secret dans l'épreuve finale
 ### Epreuves de logiques:
 
 #### fonction *afficher(grille)*
- Prend en paramètre un tableau et qui renvoie un tableau. Elle sert uniquement d'affichage.
+Prend en paramètre un tableau et qui renvoie un tableau. Elle sert uniquement d'affichage.
 
 #### Fonction *est_entree_valide(entree)*
 Elle renvoie True si les coordonnées saisies par le joueur sont valides. Elle renvoie False sinon.
@@ -103,18 +103,17 @@ Elle renvoie True si les coordonnées saisies par le joueur sont valides. Elle r
 #### fonction *tour_joueur(grille)*
 Elle permet de saisir le coup du joueur. Elle ne renvoie rien.
  
- #### fonction *afficher(grille):*
- - Prend en paramètre un tableau et qui renvoie un tableau. Elle sert uniquement d'affichage.
+#### fonction *afficher(grille):*
+Prend en paramètre un tableau et qui renvoie un tableau. Elle sert uniquement d'affichage.
    
- #### Fonction *est_entree_valide(entree):*
- - elle renvoie True si les coordonnées saisies par le joueur sont valides. Elle renvoie False sinon.
-
+#### Fonction *est_entree_valide(entree):*
+elle renvoie True si les coordonnées saisies par le joueur sont valides. Elle renvoie False sinon.
 
 #### fonction *verifier_victoire(grille,symbole)*
 Elle prend en paramètre la grille de jeu et le symbole que le souhaite verifier si il y a victoire. Elle renvoie True s'il y a victoire. Renvoie False sinon.
 
- #### fonction *grille_complete(grille)*
- Elle prend en paramètre la grille de jeu. Elle renvoie True si toutes les cases sont remplies. Renvoie False sinon.
+#### fonction *grille_complete(grille)*
+Elle prend en paramètre la grille de jeu. Elle renvoie True si toutes les cases sont remplies. Renvoie False sinon.
 
 #### fonction *verifier_resultat(grille)*
 La  permet juste de verifier s'il y a une victoire (et de qui ?) ou un match nul. Elle renvoie qui à gagné ou s'il y a match nul
@@ -123,7 +122,7 @@ La  permet juste de verifier s'il y a une victoire (et de qui ?) ou un match nul
 Elle prend en paramètre la grille de jeu et permet de connaitre le meilleur coup à jouer pour le maitre selon des règles précises. Elle renvoie un tuple qui correspond aux coordonnées du coup à jouer.
 
 #### fonction *tour_maitre(grille)*
- Elle permet de faire jouer le maitre.
+Elle permet de faire jouer le maitre.
 
 #### fonction *jeu_tictactoe()*
 Elle permet simplement le déroulement de la partie.
