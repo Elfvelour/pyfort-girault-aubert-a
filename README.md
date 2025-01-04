@@ -137,4 +137,4 @@ Puis de gagner les boyards d'or en trouvant le mot secret dans l'épreuve finale
 <p align="center">
 <img src="C:\Users\girau\OneDrive\Images\Captures d’écran\anglaisslide"    width="350"/>
 </p>
-![800px-Adrien_TOUATI](https://github.com/user-attachments/assets/72196b1c-e347-40de-9f6a-1ce4e809c614)
+![Capture d'écran 2024-09-16 082541](https://github.com/user-attachments/assets/171f6354-6e73-4186-8014-36f0b36eca83)
