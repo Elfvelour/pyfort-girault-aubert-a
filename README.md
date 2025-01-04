@@ -91,6 +91,23 @@ Puis de gagner les boyards d'or en trouvant le mot secret dans l'épreuve finale
 
 
 ### Details des fonctions implémentés
+ Fonctions de la partie de Thomas :
+ - fonction afficher(grille): qui prend en paramètre un tableau et qui renvoie un tableau. Elle sert uniquement d'affichage.
+ - la fonction est_entree_valide(entree): elle renvoie True si les coordonnées saisies par le joueur sont valides. Elle renvoie False sinon.
+ - la fonction tour_joueur(grille): permet de saisir le coup du joueur. Elle ne renvoie rien.
+ - la fonction verifier_victoire(grille,symbole): prend en paramètre la grille de jeu et le symbole que le souhaite verifier si il y a victoire. Elle renvoie True s'il y a victoire. Renvoie False sinon.
+ - la fonction grille_complete(grille): prend en paramètre la grille. Elle renvoie True si toutes les cases sont remplies. Renvoie False sinon.
+ - La fonction verifier_resultat(grille): permet juste de verifier s'il y a une victoire (et de qui ?) ou un match nul. Elle renvoie qui à gagné ou s'il y a match nul
+ - la fonction coup_maitre(grille, symbole): prend en paramètre la grille de jeu et permet de connaitre le meilleur coup à jouer pour le maitre selon des règles précises. Elle renvoie un tuple qui correspond aux coordonnées du coup à jouer.
+ - la fonction tour_maitre(grille): permet de faire jouer le maitre.
+ - la fonction jeu_tictactoe(): permet simplement le déroulement de la partie.
+
+ - la fonction introduction(): premet l'affichage des règles du jeu.
+ - la fonction composer_equipe(): permet de composer les équipes. Elle renvoie une liste de dictionnaires.
+ - la fonction menu_epreuve(): permet la sélection de l'épreuve. Elle renvoie le choix du joueur (int).
+ - la fonction choisir_joueur(): permet d'afficher les joueurs de l'équipe puis de demander de sélectionner le joueur qui réalisera l'épreuve. Elle renvoie un dictionnaire.
+ - la fonction mot_minuscule(mot): permet de rendre une chaine de caracère en majuscule en minuscule.
+ - et la fonction jeu(): qui correspond à la fonction principale du jeu. Elle s'occupe du déroulé du jeu. Donc la fonction ne renvoie rien.
 ### Epreuves de mathématiques:
 #### Fonction *factorielle(n)*
 Cette fonction calcule la factorielle d'un entier n qui est en paramètre
