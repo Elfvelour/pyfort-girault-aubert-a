@@ -195,6 +195,21 @@ Test sur la saisie du joueur qui doit réaliser l'épreuve.
   
 - 3 janvier: avancement du fichier readme,ajout de 2 images en ASCII pour mettre un peu d'origianlité, changements mineur dans les commentaires.
 
+
+
+Journal de Thomas :
+- 6 Décembre, début du projet : J'ai directement voulu commencer par le morpion car j'avais déjà réalisé le code auparavant mais à 2 joueurs. J'ai donc voulu commencé par ça car ça me semblait plus simple. Il me suffisait d'ajuster mon programme déjà existant. Mais j'ai eu beaucoup de mal à comprendre pourquoi il fallait faire autant de fonctions dans le projet.
+
+- 13 Décembre : Toujours beaucoup de mal à ajuster le programme initiale alors j'ai pris la décision de recommencer de 0 pour partir sur "de bonnes bases". J'ai codé l'affichage du morpion, la verification de victoire, la saisie des coordonnées du joueur, la partie du maitre (qui ne marchait pas) et la boucle pour faire tourner le jeu.
+
+- 20 Décembre : Avec l'aide d'un camarde, j'ai recommencé de 0 la partie de Maitre car je n'arrivais plus à comprendre ce que j'avais fait la séance précédente. Au final, après 2 bonnes heures, j'ai réussi et terminé le morpion. Puis j'ai commencé la partie **fonction_utile.py**.
+
+- Première semaine des vacances : J'ai terminé la partie **fonction_utile.py** sans trop de problèmes en 1h30. Puis dans la foulée le **main.py** toujours sans trop de soucis.
+
+- Deuxième semaine de vacances : Je me suis occupé de mes parties sur le README.md 
+
+
+
 - 1ère utilistaion pour nous deux de Github donc des commit pas tout le temps pertinant, les noms de commit pas assez claire et une inégalité des commit entre nous deux. Nos commit seront mieux gérés dans le futur. Nous nous excusons pour cette illisibilité.
 ### Répartition des tâches
 - Chacun travaille dans les tâches qui lui ont été attribués. Puis on regarde le code du binôme pour s'assurer que tout est claire et que la consigne a bien été respecté.
