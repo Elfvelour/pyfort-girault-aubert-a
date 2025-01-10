@@ -30,8 +30,8 @@ def epreuve_factorielle():
     n=randint(1,10)
     res=factorielle(n)
     print("Épreuve de Mathématiques: Calculer la factorielle de ",n)
-    resultat=int(input("Votre réponse : "))
-    if resultat==res:
+    resultat=(input("Votre réponse : "))
+    if resultat==str(res):
         return True
     else:
         return False
@@ -64,10 +64,10 @@ def premier_plus_proche(n):
 def epreuve_math_premier():
     n=randint(10,20)
     print("Épreuve de Mathématiques: Trouver le nombre premier le plus proche de",n)
-    nb_joueur=int(input("Saisir un nombre : "))
+    nb_joueur=(input("Saisir un nombre : "))
     #compare la réponse du joueur et celle du programmme grâce à la fonction
     # premier_plus_proche et renvoie vraie ou faux
-    if premier_plus_proche(n)==nb_joueur:
+    if str(premier_plus_proche(n))==nb_joueur:
         return True
     else:
         return False
@@ -98,8 +98,8 @@ def epreuve_roulette_mathematique():
         for i in range(5):
             resultat = resultat * liste_nb[i]
         print("Calculez le résultat en combinant ces nombres avec une mulitplication")
-    reponse=int(input("Votre réponse : "))
-    if reponse==resultat:
+    reponse=(input("Votre réponse : "))
+    if reponse==str(resultat):
         return True
     else:
         return False
